@@ -2,8 +2,7 @@
 firs React App
 
 ## Demo
-[View Demo page](https://giorgib04.github.io/to-do-list-js/)
-
+[View Demo page](https://giorgib04.github.io/todo-list-react/)
 
 ## Available Scripts
 
