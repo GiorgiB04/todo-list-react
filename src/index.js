@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from './globalStyle';
+import { GlobalStyle } from './GlobalStyle';
 import * as serviceWorker from './serviceWorker';
 import { theme } from './theme';
 
