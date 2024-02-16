@@ -7,14 +7,14 @@ import { GlobalStyle } from './globalStyle';
 import * as serviceWorker from './serviceWorker';
 import { theme } from './theme';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
