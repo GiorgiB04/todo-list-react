@@ -1,6 +1,5 @@
 import { List, Item, Content, Button } from "./styled";
 
-
 const Tasks = ({tasks, hideDone, removeTask, toggleTaskDone}) => (
   <List>
     {tasks.map(task => (
