@@ -12,30 +12,31 @@ const Form = () => {
   const onFormSubmit = (event) => {
     event.preventDefault();
     const contentTrimd = newTaskContent.trim();
-    
+
     if (!contentTrimd) {
       return;
     }
 
-    dispatch(addTask({
-      content: contentTrimd,
-      done: false,
-      id: nanoid(),
-    }));
-
+    dispatch(
+      addTask({
+        content: contentTrimd,
+        done: false,
+        id: nanoid(),
+      })
+    );
 
     setNewTaskContent("");
-  }
+  };
 
   return (
     <StyledForm onSubmit={onFormSubmit}>
-      <Input 
+      <Input
         className="form__input"
         placeholder="Co jest do zrobenja?"
         value={newTaskContent}
-        onChange={({target}) => setNewTaskContent(target.value)}
-        />
-        <Button>Dodaj zadanie</Button>
+        onChange={({ target }) => setNewTaskContent(target.value)}
+      />
+      <Button>Dodaj zadanie</Button>
     </StyledForm>
   );
 };
